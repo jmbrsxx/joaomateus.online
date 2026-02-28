@@ -32,6 +32,16 @@ jobs:
       - name: Build
         run: npm run build
 
+      # 🔥 DEBUG STEP
+      - name: Debug dist contents
+        run: |
+          echo "===== ROOT CONTENTS ====="
+          ls -la
+          echo "===== DIST CONTENTS ====="
+          ls -la dist
+          echo "===== DIST RECURSIVE ====="
+          ls -R dist
+
       - name: Upload Pages Artifact
         uses: actions/upload-pages-artifact@v3
         with:
