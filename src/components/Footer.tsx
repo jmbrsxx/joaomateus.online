@@ -1,11 +1,12 @@
 import { ArrowUp, Linkedin, Mail } from 'lucide-react'
+import { useTranslation } from '../i18n'
 
 export default function Footer() {
+  const { t } = useTranslation()
+
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }
-
-  const currentYear = new Date().getFullYear()
 
   return (
     <footer className="bg-slate-950 border-t border-slate-800 text-slate-400">
@@ -14,47 +15,47 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent mb-4">
-              JohnMatthew
+              JoaoMateus
             </div>
             <p className="text-sm mb-4">
-              Building digital products that generate real revenue. No decorations, just results.
+              {t('footer.brandTag')}
             </p>
           </div>
 
           {/* Services Links */}
           <div>
-            <h4 className="font-semibold text-white mb-4">Services</h4>
+            <h4 className="font-semibold text-white mb-4">{t('footer.services')}</h4>
             <ul className="space-y-2 text-sm">
-              <li><a href="#services" className="hover:text-cyan-400 transition">Website Development</a></li>
-              <li><a href="#services" className="hover:text-cyan-400 transition">AI Automation</a></li>
-              <li><a href="#services" className="hover:text-cyan-400 transition">Sales Funnels</a></li>
-              <li><a href="#services" className="hover:text-cyan-400 transition">Conversion Optimization</a></li>
+              <li><a href="#services" className="hover:text-cyan-400 transition">{t('footer.websiteDev')}</a></li>
+              <li><a href="#services" className="hover:text-cyan-400 transition">{t('footer.aiAutomation')}</a></li>
+              <li><a href="#services" className="hover:text-cyan-400 transition">{t('footer.salesFunnels')}</a></li>
+              <li><a href="#services" className="hover:text-cyan-400 transition">{t('footer.conversionOpt')}</a></li>
             </ul>
           </div>
 
           {/* Company Links */}
           <div>
-            <h4 className="font-semibold text-white mb-4">Company</h4>
+            <h4 className="font-semibold text-white mb-4">{t('footer.company')}</h4>
             <ul className="space-y-2 text-sm">
-              <li><a href="#about" className="hover:text-cyan-400 transition">About</a></li>
-              <li><a href="#work" className="hover:text-cyan-400 transition">Work</a></li>
-              <li><a href="#contact" className="hover:text-cyan-400 transition">Contact</a></li>
-              <li><a href="/#" className="hover:text-cyan-400 transition">Blog</a></li>
+              <li><a href="#about" className="hover:text-cyan-400 transition">{t('footer.aboutLink')}</a></li>
+              <li><a href="#work" className="hover:text-cyan-400 transition">{t('footer.workLink')}</a></li>
+              <li><a href="#contact" className="hover:text-cyan-400 transition">{t('footer.contactLink')}</a></li>
+              <li><a href="/#" className="hover:text-cyan-400 transition">{t('footer.blog')}</a></li>
             </ul>
           </div>
 
           {/* Contact Links */}
           <div>
-            <h4 className="font-semibold text-white mb-4">Contact</h4>
+            <h4 className="font-semibold text-white mb-4">{t('footer.connect')}</h4>
             <ul className="space-y-2 text-sm">
               <li>
                 <a href="mailto:hello@joaomateus.online" className="flex items-center gap-2 hover:text-cyan-400 transition">
-                  <Mail size={16} /> Email
+                  <Mail size={16} /> {t('contact.email')}
                 </a>
               </li>
               <li>
                 <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-cyan-400 transition">
-                  <Linkedin size={16} /> LinkedIn
+                  <Linkedin size={16} /> {t('contact.linkedin')}
                 </a>
               </li>
             </ul>
@@ -64,7 +65,7 @@ export default function Footer() {
         {/* Divider */}
         <div className="border-t border-slate-800 py-8 flex justify-between items-center">
           <p className="text-sm">
-            &copy; {currentYear} JohnMatthew. All rights reserved.
+            {t('footer.copyright')}
           </p>
           <button
             onClick={scrollToTop}

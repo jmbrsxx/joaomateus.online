@@ -9,6 +9,7 @@ import About from './components/About'
 import FAQ from './components/FAQ'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import Chatbot from './components/Chatbot'
 
 export default function App() {
   return (
@@ -23,6 +24,7 @@ export default function App() {
       <FAQ />
       <Contact />
       <Footer />
+      <Chatbot />
     </div>
   )
 }
