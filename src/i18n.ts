@@ -1,6 +1,11 @@
- import React, { createContext, useContext, useState } from 'react';
+  import React, { createContext, useContext, useState } from 'react';
 
 export type Lang = 'en' | 'pt' | 'es' | 'de' | 'fr';
+
+// Import images as assets for proper Vite handling
+import gardeningLandingPage from '/images/GardeningLandingPage.png';
+import dentistryClinics from '/images/DentistryClinics.png';
+import encanadorFix from '/images/EncanadorFix.png';
 
 interface I18nContextValue {
   lang: Lang;
@@ -100,12 +105,12 @@ const translations: Record<Lang, Record<string, any>> = {
       solutionHeading: 'Solution',
       resultHeading: 'Result',
         items: [
-          { title: 'Gardening Landing Page', client: 'Project: Green Landscaping', image: '/images/GardeningLandingPage.png', category: 'Landing Page', link: 'https://jmbrsxx.github.io/Landing-Page-jardineiro/' },
-          { title: 'Dental Clinic', client: 'Project: Modern Dentist', image: '/images/DentistryClinics.png', category: 'Health', link: 'https://jmbrsxx.github.io/clinica-site/' },
-          { title: 'Plumbing Services', client: 'Project: 24h Plumber', image: '/images/EncanadorFix.png', category: 'Services', link: 'https://jmbrsxx.github.io/landing-page-Encanador/' },
-          { title: 'Restaurant Website', client: 'Project: Digital Menu', image: '/images/GardeningLandingPage.png', category: 'Restaurant', link: 'https://jmbrsxx.github.io/Landing-Page-jardineiro/' },
-          { title: 'Real Estate Platform', client: 'Project: Property Search', image: '/images/DentistryClinics.png', category: 'Real Estate', link: 'https://jmbrsxx.github.io/clinica-site/' },
-          { title: 'Health Website', client: 'Project: Fitness Center', image: '/images/EncanadorFix.png', category: 'Health', link: 'https://jmbrsxx.github.io/landing-page-Encanador/' }
+          { title: 'Gardening Landing Page', client: 'Project: Green Landscaping', image: gardeningLandingPage, category: 'Landing Page', link: 'https://jmbrsxx.github.io/Landing-Page-jardineiro/' },
+          { title: 'Dental Clinic', client: 'Project: Modern Dentist', image: dentistryClinics, category: 'Health', link: 'https://jmbrsxx.github.io/clinica-site/' },
+          { title: 'Plumbing Services', client: 'Project: 24h Plumber', image: encanadorFix, category: 'Services', link: 'https://jmbrsxx.github.io/landing-page-Encanador/' },
+          { title: 'Restaurant Website', client: 'Project: Digital Menu', image: gardeningLandingPage, category: 'Restaurant', link: 'https://jmbrsxx.github.io/Landing-Page-jardineiro/' },
+          { title: 'Real Estate Platform', client: 'Project: Property Search', image: dentistryClinics, category: 'Real Estate', link: 'https://jmbrsxx.github.io/clinica-site/' },
+          { title: 'Health Website', client: 'Project: Fitness Center', image: encanadorFix, category: 'Health', link: 'https://jmbrsxx.github.io/landing-page-Encanador/' }
         ]
     },
     howIWork: {
@@ -270,12 +275,12 @@ const translations: Record<Lang, Record<string, any>> = {
       solutionHeading: 'Solução',
       resultHeading: 'Resultado',
         items: [
-          { title: 'Landing page para Jardineiros', client: 'Projeto: Paisagismo Verde', image: '/images/GardeningLandingPage.png', category: 'Página de Destino', link: 'https://jmbrsxx.github.io/Landing-Page-jardineiro/' },
-          { title: 'Clínica Odontológica', client: 'Projeto: Dentista Moderna', image: '/images/DentistryClinics.png', category: 'Saúde', link: 'https://jmbrsxx.github.io/clinica-site/' },
-          { title: 'Serviços de Encanamento', client: 'Projeto: Encanador 24h', image: '/images/EncanadorFix.png', category: 'Serviços', link: 'https://jmbrsxx.github.io/landing-page-Encanador/' },
-          { title: 'Site de Restaurante', client: 'Projeto: Cardápio Digital', image: '/images/GardeningLandingPage.png', category: 'Restaurante', link: 'https://jmbrsxx.github.io/Landing-Page-jardineiro/' },
-          { title: 'Plataforma Imobiliária', client: 'Projeto: Busca de Imóveis', image: '/images/DentistryClinics.png', category: 'Imobiliário', link: 'https://jmbrsxx.github.io/clinica-site/' },
-          { title: 'Site de Saúde', client: 'Projeto: Centro de Fitness', image: '/images/EncanadorFix.png', category: 'Saúde', link: 'https://jmbrsxx.github.io/landing-page-Encanador/' }
+          { title: 'Landing page para Jardineiros', client: 'Projeto: Paisagismo Verde', image: gardeningLandingPage, category: 'Página de Destino', link: 'https://jmbrsxx.github.io/Landing-Page-jardineiro/' },
+          { title: 'Clínica Odontológica', client: 'Projeto: Dentista Moderna', image: dentistryClinics, category: 'Saúde', link: 'https://jmbrsxx.github.io/clinica-site/' },
+          { title: 'Serviços de Encanamento', client: 'Projeto: Encanador 24h', image: encanadorFix, category: 'Serviços', link: 'https://jmbrsxx.github.io/landing-page-Encanador/' },
+          { title: 'Site de Restaurante', client: 'Projeto: Cardápio Digital', image: gardeningLandingPage, category: 'Restaurante', link: 'https://jmbrsxx.github.io/Landing-Page-jardineiro/' },
+          { title: 'Plataforma Imobiliária', client: 'Projeto: Busca de Imóveis', image: dentistryClinics, category: 'Imobiliário', link: 'https://jmbrsxx.github.io/clinica-site/' },
+          { title: 'Site de Saúde', client: 'Projeto: Centro de Fitness', image: encanadorFix, category: 'Saúde', link: 'https://jmbrsxx.github.io/landing-page-Encanador/' }
         ]
     },
     howIWork: {
@@ -440,12 +445,12 @@ const translations: Record<Lang, Record<string, any>> = {
       solutionHeading: 'Solución',
       resultHeading: 'Resultado',
         items: [
-          { title: 'Página de Destino para Jardineros', client: 'Proyecto: Paisajismo Verde', image: '/images/GardeningLandingPage.png', category: 'Página de Destino', link: 'https://jmbrsxx.github.io/Landing-Page-jardineiro/' },
-          { title: 'Clínica Odontológica', client: 'Proyecto: Dentista Moderna', image: '/images/DentistryClinics.png', category: 'Salud', link: 'https://jmbrsxx.github.io/clinica-site/' },
-          { title: 'Servicios de Plomería', client: 'Proyecto: Plomero 24h', image: '/images/EncanadorFix.png', category: 'Servicios', link: 'https://jmbrsxx.github.io/landing-page-Encanador/' },
-          { title: 'Sitio Web de Restaurante', client: 'Proyecto: Menú Digital', image: '/images/GardeningLandingPage.png', category: 'Restaurante', link: 'https://jmbrsxx.github.io/Landing-Page-jardineiro/' },
-          { title: 'Plataforma Inmobiliaria', client: 'Proyecto: Búsqueda de Inmuebles', image: '/images/DentistryClinics.png', category: 'Inmobiliario', link: 'https://jmbrsxx.github.io/clinica-site/' },
-          { title: 'Sitio Web de Salud', client: 'Proyecto: Centro de Fitness', image: '/images/EncanadorFix.png', category: 'Salud', link: 'https://jmbrsxx.github.io/landing-page-Encanador/' }
+          { title: 'Página de Destino para Jardineros', client: 'Proyecto: Paisajismo Verde', image: gardeningLandingPage, category: 'Página de Destino', link: 'https://jmbrsxx.github.io/Landing-Page-jardineiro/' },
+          { title: 'Clínica Odontológica', client: 'Proyecto: Dentista Moderna', image: dentistryClinics, category: 'Salud', link: 'https://jmbrsxx.github.io/clinica-site/' },
+          { title: 'Servicios de Plomería', client: 'Proyecto: Plomero 24h', image: encanadorFix, category: 'Servicios', link: 'https://jmbrsxx.github.io/landing-page-Encanador/' },
+          { title: 'Sitio Web de Restaurante', client: 'Proyecto: Menú Digital', image: gardeningLandingPage, category: 'Restaurante', link: 'https://jmbrsxx.github.io/Landing-Page-jardineiro/' },
+          { title: 'Plataforma Inmobiliaria', client: 'Proyecto: Búsqueda de Inmuebles', image: dentistryClinics, category: 'Inmobiliario', link: 'https://jmbrsxx.github.io/clinica-site/' },
+          { title: 'Sitio Web de Salud', client: 'Proyecto: Centro de Fitness', image: encanadorFix, category: 'Salud', link: 'https://jmbrsxx.github.io/landing-page-Encanador/' }
         ]
     },
     howIWork: {
@@ -610,12 +615,12 @@ const translations: Record<Lang, Record<string, any>> = {
       solutionHeading: 'Lösung',
       resultHeading: 'Ergebnis',
         items: [
-          { title: 'Landing Page für Gärtner', client: 'Projekt: Grüne Landschaftspflege', image: '/images/GardeningLandingPage.png', category: 'Landing Page', link: 'https://jmbrsxx.github.io/Landing-Page-jardineiro/' },
-          { title: 'Zahnklinik', client: 'Projekt: Moderne Zahnärztin', image: '/images/DentistryClinics.png', category: 'Gesundheit', link: 'https://jmbrsxx.github.io/clinica-site/' },
-          { title: 'Klempnerdienste', client: 'Projekt: Klempner 24h', image: '/images/EncanadorFix.png', category: 'Dienstleistungen', link: 'https://jmbrsxx.github.io/landing-page-Encanador/' },
-          { title: 'Restaurant-Website', client: 'Projekt: Digitale Speisekarte', image: '/images/GardeningLandingPage.png', category: 'Restaurant', link: 'https://jmbrsxx.github.io/Landing-Page-jardineiro/' },
-          { title: 'Immobilienplattform', client: 'Projekt: Immobiliensuche', image: '/images/DentistryClinics.png', category: 'Immobilien', link: 'https://jmbrsxx.github.io/clinica-site/' },
-          { title: 'Gesundheitswebsite', client: 'Projekt: Fitnesszentrum', image: '/images/EncanadorFix.png', category: 'Gesundheit', link: 'https://jmbrsxx.github.io/landing-page-Encanador/' }
+          { title: 'Landing Page für Gärtner', client: 'Projekt: Grüne Landschaftspflege', image: gardeningLandingPage, category: 'Landing Page', link: 'https://jmbrsxx.github.io/Landing-Page-jardineiro/' },
+          { title: 'Zahnklinik', client: 'Projekt: Moderne Zahnärztin', image: dentistryClinics, category: 'Gesundheit', link: 'https://jmbrsxx.github.io/clinica-site/' },
+          { title: 'Klempnerdienste', client: 'Projekt: Klempner 24h', image: encanadorFix, category: 'Dienstleistungen', link: 'https://jmbrsxx.github.io/landing-page-Encanador/' },
+          { title: 'Restaurant-Website', client: 'Projekt: Digitale Speisekarte', image: gardeningLandingPage, category: 'Restaurant', link: 'https://jmbrsxx.github.io/Landing-Page-jardineiro/' },
+          { title: 'Immobilienplattform', client: 'Projekt: Immobiliensuche', image: dentistryClinics, category: 'Immobilien', link: 'https://jmbrsxx.github.io/clinica-site/' },
+          { title: 'Gesundheitswebsite', client: 'Projekt: Fitnesszentrum', image: encanadorFix, category: 'Gesundheit', link: 'https://jmbrsxx.github.io/landing-page-Encanador/' }
         ]
     },
     howIWork: {
@@ -780,12 +785,12 @@ const translations: Record<Lang, Record<string, any>> = {
       solutionHeading: 'Solution',
       resultHeading: 'Résultat',
         items: [
-          { title: 'Page de Destination pour Jardiniers', client: 'Projet: Aménagement Paysager Vert', image: '/images/GardeningLandingPage.png', category: 'Page de Destination', link: 'https://jmbrsxx.github.io/Landing-Page-jardineiro/' },
-          { title: 'Clinique Dentaire', client: 'Projet: Dentiste Moderne', image: '/images/DentistryClinics.png', category: 'Santé', link: 'https://jmbrsxx.github.io/clinica-site/' },
-          { title: 'Services de Plomberie', client: 'Projet: Plombier 24h', image: '/images/EncanadorFix.png', category: 'Services', link: 'https://jmbrsxx.github.io/landing-page-Encanador/' },
-          { title: 'Site Web de Restaurant', client: 'Projet: Carte Digitale', image: '/images/GardeningLandingPage.png', category: 'Restaurant', link: 'https://jmbrsxx.github.io/Landing-Page-jardineiro/' },
-          { title: 'Plateforme Immobilière', client: 'Projet: Recherche Immobilière', image: '/images/DentistryClinics.png', category: 'Immobilier', link: 'https://jmbrsxx.github.io/clinica-site/' },
-          { title: 'Site Web de Santé', client: 'Projet: Centre de Fitness', image: '/images/EncanadorFix.png', category: 'Santé', link: 'https://jmbrsxx.github.io/landing-page-Encanador/' }
+          { title: 'Page de Destination pour Jardiniers', client: 'Projet: Aménagement Paysager Vert', image: gardeningLandingPage, category: 'Page de Destination', link: 'https://jmbrsxx.github.io/Landing-Page-jardineiro/' },
+          { title: 'Clinique Dentaire', client: 'Projet: Dentiste Moderne', image: dentistryClinics, category: 'Santé', link: 'https://jmbrsxx.github.io/clinica-site/' },
+          { title: 'Services de Plomberie', client: 'Projet: Plombier 24h', image: encanadorFix, category: 'Services', link: 'https://jmbrsxx.github.io/landing-page-Encanador/' },
+          { title: 'Site Web de Restaurant', client: 'Projet: Carte Digitale', image: gardeningLandingPage, category: 'Restaurant', link: 'https://jmbrsxx.github.io/Landing-Page-jardineiro/' },
+          { title: 'Plateforme Immobilière', client: 'Projet: Recherche Immobilière', image: dentistryClinics, category: 'Immobilier', link: 'https://jmbrsxx.github.io/clinica-site/' },
+          { title: 'Site Web de Santé', client: 'Projet: Centre de Fitness', image: encanadorFix, category: 'Santé', link: 'https://jmbrsxx.github.io/landing-page-Encanador/' }
         ]
     },
     howIWork: {
