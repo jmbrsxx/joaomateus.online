@@ -3,5 +3,5 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/', // Use absolute paths for GitHub Pages
+  base: '/joaomateus.online/', // GitHub Pages project repository base path
 })
