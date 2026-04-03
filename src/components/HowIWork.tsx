@@ -5,7 +5,7 @@ import { useTranslation } from '../i18n'
 export default function HowIWork() {
   const { t } = useTranslation()
 
-  const steps = t('howIWork.steps') as unknown as { title: string; desc: string; timeline: string }[]
+  const steps = t('howIWork.steps') as unknown as { title: string; desc: string }[]
   const keyPoints = t('howIWork.keyPoints') as unknown as { transparent: string; transparentDesc: string; dataDriven: string; dataDrivenDesc: string }
 
   return (
@@ -31,8 +31,6 @@ export default function HowIWork() {
 
                 <h3 className="text-2xl font-bold mb-4 pt-4">{step.title}</h3>
                 <p className="text-slate-400 mb-6 leading-relaxed">{step.desc}</p>
-
-                <div className="text-sm text-cyan-400 font-semibold">{step.timeline}</div>
 
                 {/* Connector Line */}
                 {index < steps.length - 1 && (
