@@ -54,18 +54,14 @@ export default function Hero() {
               </div>
 
               {/* Stats */}
-              <div className="grid grid-cols-3 gap-6">
+              <div className="grid grid-cols-2 gap-6">
                 <div>
-                  <div className="text-3xl font-bold text-cyan-400">50+</div>
+                  <div className="text-3xl font-bold text-cyan-400">2+</div>
+                  <p className="text-slate-400 text-sm">{t('hero.stats.experience')}</p>
+                </div>
+                <div>
+                  <div className="text-3xl font-bold text-cyan-400">10+</div>
                   <p className="text-slate-400 text-sm">{t('hero.stats.projects')}</p>
-                </div>
-                <div>
-                  <div className="text-3xl font-bold text-cyan-400">$5M+</div>
-                  <p className="text-slate-400 text-sm">{t('hero.stats.revenue')}</p>
-                </div>
-                <div>
-                  <div className="text-3xl font-bold text-cyan-400">98%</div>
-                  <p className="text-slate-400 text-sm">{t('hero.stats.satisfaction')}</p>
                 </div>
               </div>
             </AnimateOnScroll>

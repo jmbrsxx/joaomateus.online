@@ -4,40 +4,40 @@ import { useTranslation } from '../i18n'
 
 const testimonials = [
   {
-    text: 'João rebuilt our website and the results were immediate. Within 3 months, we went from 200 monthly leads to 1,200. He doesn\'t just build websites — he builds revenue engines.',
+    text: 'João reconstruiu nosso site e os resultados foram imediatos. Em 3 meses, passamos de 200 leads mensais para mais de 1.000. Ele não constrói sites — ele constrói motores de receita.',
     author: 'Marcus Chen',
-    title: 'CEO, SaaS Company',
-    result: '$2.4M additional revenue'
+    title: 'CEO, Empresa SaaS',
+    result: 'Aumento significativo em leads'
   },
   {
-    text: 'The AI automation system he built saved us $18K per month in support costs. Best investment we\'ve made. João thinks like a business owner, not like a developer.',
+    text: 'O sistema de automação de IA que ele construiu nos economizou tempo valioso em custos de suporte. Melhor investimento que fizemos. João pensa como dono de negócio, não como desenvolvedor.',
     author: 'Sarah Mitchell',
-    title: 'Founder, Service Business',
-    result: '$216K annual savings'
+    title: 'Fundadora, Negócio de Serviços',
+    result: 'Economia significativa em suporte'
   },
   {
-    text: 'Our conversion rate went from 2% to 8.7%. João ran tests on every element of the funnel and optimized relentlessly. The data doesn\'t lie.',
+    text: 'Nossa taxa de conversão melhorou consideravelmente. João executou testes em cada elemento do funil e otimizou sem parar. Os dados não mentem.',
     author: 'David Lopez',
-    title: 'Marketing Director, E-Commerce',
-    result: '+340% conversion increase'
+    title: 'Diretor de Marketing, E-Commerce',
+    result: 'Melhoria consistente na conversão'
   },
   {
-    text: 'Working with João is different. He asked about our business metrics before suggesting anything. Built an agency website that generates 250+ qualified leads monthly.',
+    text: 'Trabalhar com João é diferente. Ele perguntou sobre nossas métricas de negócio antes de sugerir qualquer coisa. Construiu um site de agência que gera leads qualificados mensalmente.',
     author: 'Emma Rodriguez',
-    title: 'Partner, Marketing Agency',
-    result: '250+ monthly qualified leads'
+    title: 'Sócia, Agência de Marketing',
+    result: 'Geração consistente de leads qualificados'
   },
   {
-    text: 'The website he built is lightning fast and converts like crazy. Page speed improved 65%, bounce rate cut in half. João understands the connection between speed and revenue.',
+    text: 'O site que ele construiu é extremamente rápido e converte bem. Velocidade da página melhorou, taxa de rejeição reduzida. João entende a conexão entre velocidade e receita.',
     author: 'James Wilson',
-    title: 'E-Commerce Owner',
-    result: '+65% speed improvement'
+    title: 'Dono de E-Commerce',
+    result: 'Melhoria na performance e conversão'
   },
   {
-    text: 'João is a results-first operator. Every decision was based on data. We saw a 340% improvement in key metrics. Phenomenal work.',
+    text: 'João é um operador focado em resultados. Toda decisão foi baseada em dados. Vimos melhoria nas métricas principais. Trabalho fenomenal.',
     author: 'Lisa Anderson',
-    title: 'VP Operations, Tech Startup',
-    result: '$5M+ revenue generated'
+    title: 'VP Operações, Startup de Tecnologia',
+    result: 'Resultados mensuráveis alcançados'
   }
 ]
 

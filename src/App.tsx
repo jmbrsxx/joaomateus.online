@@ -4,12 +4,11 @@ import Hero from './components/Hero'
 import Services from './components/Services'
 import Projects from './components/Projects'
 import HowIWork from './components/HowIWork'
-import Testimonials from './components/Testimonials'
 import About from './components/About'
 import FAQ from './components/FAQ'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
-import Chatbot from './components/Chatbot'
+
 
 export default function App() {
   return (
@@ -19,12 +18,10 @@ export default function App() {
       <Services />
       <Projects />
       <HowIWork />
-      <Testimonials />
       <About />
       <FAQ />
       <Contact />
       <Footer />
-      <Chatbot />
     </div>
   )
 }

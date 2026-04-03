@@ -20,14 +20,7 @@ export default function Header() {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
         {/* Logo */}
         <div className="flex items-center gap-3">
-          {/* Beta Badge */}
-          <div className="relative">
-            <div className="absolute -inset-0.5 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full blur opacity-75 animate-pulse"></div>
-            <span className="relative px-3 py-1 bg-gradient-to-r from-purple-600 to-pink-600 text-white text-xs font-bold rounded-full tracking-wider shadow-lg">
-              BETA
-            </span>
-          </div>
-          <div 
+          <div
             onClick={() => scrollToSection('hero')}
             className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent cursor-pointer hover:opacity-80 transition"
           >
@@ -37,11 +30,11 @@ export default function Header() {
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-4">
-          <button onClick={() => scrollToSection('work')} className="text-slate-300 hover:text-cyan-400 transition text-sm font-medium">
-            {t('nav.work')}
-          </button>
           <button onClick={() => scrollToSection('services')} className="text-slate-300 hover:text-cyan-400 transition text-sm font-medium">
             {t('nav.services')}
+          </button>
+          <button onClick={() => scrollToSection('work')} className="text-slate-300 hover:text-cyan-400 transition text-sm font-medium">
+            {t('nav.work')}
           </button>
           <button onClick={() => scrollToSection('about')} className="text-slate-300 hover:text-cyan-400 transition text-sm font-medium">
             {t('nav.about')}

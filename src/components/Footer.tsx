@@ -1,4 +1,4 @@
-import { ArrowUp, Linkedin, Mail } from 'lucide-react'
+import { ArrowUp, Mail, Phone } from 'lucide-react'
 import { useTranslation } from '../i18n'
 
 export default function Footer() {
@@ -15,10 +15,10 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent mb-4">
-              JoaoMateus
+              {t('footer.brandName')}
             </div>
             <p className="text-sm mb-4">
-              {t('footer.brandTag')}
+              {t('footer.brandDesc')}
             </p>
           </div>
 
@@ -26,38 +26,40 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold text-white mb-4">{t('footer.services')}</h4>
             <ul className="space-y-2 text-sm">
-              <li><a href="#services" className="hover:text-cyan-400 transition">{t('footer.websiteDev')}</a></li>
-              <li><a href="#services" className="hover:text-cyan-400 transition">{t('footer.aiAutomation')}</a></li>
-              <li><a href="#services" className="hover:text-cyan-400 transition">{t('footer.salesFunnels')}</a></li>
-              <li><a href="#services" className="hover:text-cyan-400 transition">{t('footer.conversionOpt')}</a></li>
+              {t('footer.servicesList').map((service: string, index: number) => (
+                <li key={index}><a href="#services" className="hover:text-cyan-400 transition">{service}</a></li>
+              ))}
             </ul>
           </div>
 
-          {/* Company Links */}
+          {/* Navigation Links */}
           <div>
-            <h4 className="font-semibold text-white mb-4">{t('footer.company')}</h4>
+            <h4 className="font-semibold text-white mb-4">{t('footer.navigation')}</h4>
             <ul className="space-y-2 text-sm">
-              <li><a href="#about" className="hover:text-cyan-400 transition">{t('footer.aboutLink')}</a></li>
-              <li><a href="#work" className="hover:text-cyan-400 transition">{t('footer.workLink')}</a></li>
-              <li><a href="#contact" className="hover:text-cyan-400 transition">{t('footer.contactLink')}</a></li>
-              <li><a href="/#" className="hover:text-cyan-400 transition">{t('footer.blog')}</a></li>
+              {t('footer.navigationList').map((item: string, index: number) => {
+                const href = item === 'Sobre' ? '#about' : item === 'Portfólio' ? '#work' : item === 'Contato' ? '#contact' : '/#'
+                return (
+                  <li key={index}><a href={href} className="hover:text-cyan-400 transition">{item}</a></li>
+                )
+              })}
             </ul>
           </div>
 
           {/* Contact Links */}
           <div>
-            <h4 className="font-semibold text-white mb-4">{t('footer.connect')}</h4>
+            <h4 className="font-semibold text-white mb-4">{t('footer.contact')}</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="mailto:hello@joaomateus.online" className="flex items-center gap-2 hover:text-cyan-400 transition">
-                  <Mail size={16} /> {t('contact.email')}
-                </a>
+                <span className="flex items-center gap-2">
+                  <Mail size={16} /> jmsrs375@gmail.com
+                </span>
               </li>
               <li>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-cyan-400 transition">
-                  <Linkedin size={16} /> {t('contact.linkedin')}
-                </a>
+                <span className="flex items-center gap-2">
+                  <Phone size={16} /> +55 51 9239-5656
+                </span>
               </li>
+
             </ul>
           </div>
         </div>
