@@ -39,7 +39,7 @@ const translations: Record<Lang, Record<string, any>> = {
       viewWork: 'View My Work',
       stats: {
         projects: 'Projects Delivered',
-        satisfaction: 'Client Satisfaction',
+        experience: 'Years Experience',
       },
       visualText: 'Revenue Growth Systems',
     },
@@ -209,7 +209,7 @@ const translations: Record<Lang, Record<string, any>> = {
       viewWork: 'Veja Meu Trabalho',
       stats: {
         projects: 'Projetos Desenvolvidos',
-        satisfaction: 'Satisfação do Cliente',
+        experience: 'Anos de Experiência',
       },
       visualText: 'Sistemas de Crescimento de Receita',
     },
@@ -378,8 +378,8 @@ const translations: Record<Lang, Record<string, any>> = {
       bookCall: 'Reservar una Estrategia',
       viewWork: 'Ver Mi Trabajo',
       stats: {
-        projects: 'Proyectos Desarrollados',
-        satisfaction: 'Satisfacción del Cliente',
+        projects: 'Proyectos Entregados',
+        experience: 'Años de Experiencia',
       },
       visualText: 'Sistemas de Crecimiento de Receita',
     },
@@ -548,8 +548,8 @@ const translations: Record<Lang, Record<string, any>> = {
       bookCall: 'Strategie Buchen',
       viewWork: 'Meine Arbeit Sehen',
       stats: {
-        projects: 'Entwickelte Projekte',
-        satisfaction: 'Kundenzufriedenheit',
+        projects: 'Projekte Abgeschlossen',
+        experience: 'Jahre Erfahrung',
       },
       visualText: 'Systeme für Umsatzwachstum',
     },
@@ -718,8 +718,8 @@ const translations: Record<Lang, Record<string, any>> = {
       bookCall: 'Réserver une Stratégie',
       viewWork: 'Voir Mon Travail',
       stats: {
-        projects: 'Projets Développés',
-        satisfaction: 'Satisfaction Client',
+        projects: 'Projets Livrés',
+        experience: "Ans d'Expérience",
       },
       visualText: 'Systèmes de Croissance de Receita',
     },
